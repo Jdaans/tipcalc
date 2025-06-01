@@ -1,0 +1,166 @@
+:root {
+
+    /* Primary */
+    --green-400: hsl(172, 67%, 45%);
+
+    /* Neutral */
+    --green-800: #085C61;
+    --green-900: hsl(183, 100%, 15%);
+    --grey-500: hsl(186, 14%, 43%);
+    --grey-400: hsl(184, 14%, 56%);
+    --grey-200: hsl(185, 41%, 84%);
+    --grey-50: hsl(189, 47%, 97%);
+    --white: hsl(0, 100%, 100%);
+
+    /* Typography */
+    --fs-normal: 1rem;
+    --fs-form-inputs: 1.5rem;
+    --fw: 700;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+button {
+    color: var(--white);
+    width: 100%;
+    
+    background: var(--green-900);
+    padding: 1rem;
+    border: none;
+    font-size: var(--fs-form-inputs);
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    display: inline-block;
+    color: var(--green-900);
+    width: 100%;
+    padding: 1rem;
+    padding-left: 2.5rem;
+    border: 1px solid var(--green-400);
+    background-color: var(--grey-50) !important;
+    -moz-appearance: textfield;
+}
+
+input,
+button {
+    font: inherit;
+    border-radius: 0.2rem;
+    font-size: var(--fs-form-inputs);
+    height: 3rem;
+    border-radius: 0.3125rem;
+}
+
+
+body {
+    font-family: space mono;
+    font-weight: var(--fw);
+    font-size: var(--fs-normal);
+    color: var(--green-900);
+    background: var(--grey-200);
+}
+
+.calculator-container {
+    background-color: var(--white);
+    border-radius: 1.5625rem;
+}
+
+form {
+    margin: 2rem 1.5rem;
+    padding-top: 2rem;
+}
+
+
+label {
+    color: var(--grey-500);
+}
+
+#billInput {
+    background: url(/icon-dollar.svg) no-repeat;
+    background-position: 1.5% 50%;
+    margin-bottom: 38px;
+}
+
+#peopleInput {
+    background: url(/icon-person.svg) no-repeat;
+    background-position: 1.5% 50%;
+}
+
+.header-image {
+    text-align: center;
+    margin-top: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+.total-container {
+    background-color: var(--green-900);
+    color: var(--white);
+    border-radius: 0.9375rem;
+    padding: 1.97rem 1.44rem 1.84rem 1.66rem;
+    margin: 2rem 1.5rem;
+}
+
+.tip-amount {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.total-amount-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+
+.total-amount,
+.total-per-person {
+    font-size: 2rem;
+    color: var(--green-400);
+}
+
+
+.reset-button {
+    background-color: var(--green-800);
+    color: var(--green-900);
+}
+
+.tip-section {
+    display: grid;
+    grid-template-columns: repeat(2, 9.1875rem);
+    grid-template-rows: repeat(3, 3rem);
+    gap: 1rem;
+}
+
+.tip-container {
+    margin-bottom: 2rem;
+    width: 100%;
+}
+
+.select-tip-button,
+.custom-input {
+    font-size: 1.5rem;
+}
+
+small {
+    color: var(--green-400);
+}
+
+
+
+
+
+
+
+
+
